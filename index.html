@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+
+<body>
+    <header>
+        <h1>INSERT BOOK</h1>
+        <h2>Project purpose :P</h2>
+    </header>
+    <main>
+        <form action="" class="book_form">
+            <table>
+                <tr>
+                    <td>Book:</td>
+                    <td>
+                        <input type="text" name="txtBook" id="txtBook" class="form_input">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Author:</td>
+                    <td>
+                        <input type="text" name="txtAuthor" id="txtAuthor" class="form_input">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Number of pages:</td>
+                    <td>
+                        <input type="number" name="numPage" id="numPage" class="form_input">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Have you read it?</td>
+                    <td>
+                        <input type="radio" id="rReadYes" name="radio" value="Read it"> Read it <br>
+                        <input type="radio" id="rReadNo" name="radio" value="Not yet" checked> Not yet
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" class="send" value="Show in table">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="content">
+            <h1>Library</h1>
+            <table class="result">
+                <tbody id="booksList">
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Number of pages</th>
+                        <th>Status</th>
+                        <th>Remove</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h2>Made by <a href="">Kristina</a></h2>
+        <p>&COPY; 2018</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
